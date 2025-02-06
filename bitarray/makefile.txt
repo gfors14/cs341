@@ -1,0 +1,15 @@
+driver.o: driver.cpp bitarray.o set.o
+	g++ driver.cpp bitarray.o set.o -o blah	
+	
+bitarray.o: bitarray.cpp
+	g++ -c bitarray.cpp -o bitarray.o
+	
+set.o: set.cpp
+	g++ -c set.cpp -o set.o
+
+clean:
+	rm -f bitarray.o set.o
+
+
+
+
