@@ -1,0 +1,26 @@
+==2472740== Memcheck, a memory error detector
+==2472740== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2472740== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==2472740== Command: ./Bits.exe --leak-check=full --track-origins=yes
+==2472740== Parent PID: 2469265
+==2472740== 
+==2472740== Conditional jump or move depends on uninitialised value(s)
+==2472740==    at 0x10989A: BitArray::initialize(char*, int) (in /home/jclange/CS341/Assignment3/Bits.exe)
+==2472740==    by 0x10A300: Dictionary::initialize(char*, int) (in /home/jclange/CS341/Assignment3/Bits.exe)
+==2472740==    by 0x1093F5: main (in /home/jclange/CS341/Assignment3/Bits.exe)
+==2472740== 
+==2472740== Conditional jump or move depends on uninitialised value(s)
+==2472740==    at 0x10989A: BitArray::initialize(char*, int) (in /home/jclange/CS341/Assignment3/Bits.exe)
+==2472740==    by 0x109FB6: Set::initialize(char*, int) (in /home/jclange/CS341/Assignment3/Bits.exe)
+==2472740==    by 0x109432: main (in /home/jclange/CS341/Assignment3/Bits.exe)
+==2472740== 
+==2472740== 
+==2472740== HEAP SUMMARY:
+==2472740==     in use at exit: 0 bytes in 0 blocks
+==2472740==   total heap usage: 4 allocs, 4 frees, 73,736 bytes allocated
+==2472740== 
+==2472740== All heap blocks were freed -- no leaks are possible
+==2472740== 
+==2472740== Use --track-origins=yes to see where uninitialised values come from
+==2472740== For lists of detected and suppressed errors, rerun with: -s
+==2472740== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
