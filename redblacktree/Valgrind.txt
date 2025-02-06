@@ -1,0 +1,15 @@
+==2393519== Memcheck, a memory error detector
+==2393519== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2393519== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==2393519== Command: ./BST.exe --leak-check=full --track-origins=yes
+==2393519== Parent PID: 2391078
+==2393519== 
+==2393519== 
+==2393519== HEAP SUMMARY:
+==2393519==     in use at exit: 0 bytes in 0 blocks
+==2393519==   total heap usage: 12 allocs, 12 frees, 82,712 bytes allocated
+==2393519== 
+==2393519== All heap blocks were freed -- no leaks are possible
+==2393519== 
+==2393519== For lists of detected and suppressed errors, rerun with: -s
+==2393519== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
